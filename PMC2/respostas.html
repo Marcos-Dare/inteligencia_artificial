@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados - Classificação de Conservantes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
+        h1, h2, h3 { color: #0056b3; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        .img-container { text-align: center; margin: 20px 0; }
+        img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+
+    <h1>Trabalho - Lab. Inteligência Artificial</h1>
+    <h2>Resultados - Classificação de Conservantes (PMC2)</h2>
+
+    <h3>1. Desempenho dos Treinamentos</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Algoritmo</th>
+                <th>Tempo de Processamento (s)</th>
+                <th>Número de Épocas</th>
+                <th>Erro Quadrático Médio Final (EQM)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Padrão</td><td>1.09</td><td>5000</td><td>0.12160051</td></tr>
+            <tr><td>Momentum</td><td>1.09</td><td>5000</td><td>0.02038363</td></tr>
+        </tbody>
+    </table>
+
+    <h3>2. Gráficos de EQM x Épocas</h3>
+    <div class="img-container">
+        <img src="graficos_eqm.png" alt="Gráficos EQM x Épocas">
+    </div>
+
+    <h3>3. Validação no Conjunto de Teste</h3>
+    <h4>Resultados para o Treinamento: Padrão</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Amostra</th>
+                <th>x1</th>
+                <th>x2</th>
+                <th>x3</th>
+                <th>x4</th>
+                <th>d1</th>
+                <th>d2</th>
+                <th>d3</th>
+                <th>y1</th>
+                <th>y2</th>
+                <th>y3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>0.8622</td><td>0.7101</td><td>0.6236</td><td>0.7894</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>2</td><td>0.2741</td><td>0.1552</td><td>0.1333</td><td>0.1516</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>3</td><td>0.6772</td><td>0.8516</td><td>0.6543</td><td>0.7573</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>4</td><td>0.2178</td><td>0.5039</td><td>0.6415</td><td>0.5039</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>5</td><td>0.7260</td><td>0.7500</td><td>0.7007</td><td>0.4953</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>6</td><td>0.2473</td><td>0.2941</td><td>0.4248</td><td>0.3087</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>7</td><td>0.5682</td><td>0.5683</td><td>0.5054</td><td>0.4426</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>8</td><td>0.6566</td><td>0.6715</td><td>0.4952</td><td>0.3951</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>9</td><td>0.0705</td><td>0.4717</td><td>0.2921</td><td>0.2954</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>10</td><td>0.1187</td><td>0.2568</td><td>0.3140</td><td>0.3037</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>11</td><td>0.5673</td><td>0.7011</td><td>0.4083</td><td>0.5552</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>12</td><td>0.3164</td><td>0.2251</td><td>0.3526</td><td>0.2560</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>13</td><td>0.7884</td><td>0.9568</td><td>0.6825</td><td>0.6398</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>14</td><td>0.9633</td><td>0.7850</td><td>0.6777</td><td>0.6059</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>15</td><td>0.7739</td><td>0.8505</td><td>0.7934</td><td>0.6626</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>16</td><td>0.4219</td><td>0.4136</td><td>0.1408</td><td>0.0940</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>17</td><td>0.6616</td><td>0.4365</td><td>0.6597</td><td>0.8129</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>18</td><td>0.7325</td><td>0.4761</td><td>0.3888</td><td>0.5683</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        </tbody>
+    </table>
+    <p><b>Taxa de Acerto:</b> 72.22%</p>
+    <h4>Resultados para o Treinamento: Momentum</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Amostra</th>
+                <th>x1</th>
+                <th>x2</th>
+                <th>x3</th>
+                <th>x4</th>
+                <th>d1</th>
+                <th>d2</th>
+                <th>d3</th>
+                <th>y1</th>
+                <th>y2</th>
+                <th>y3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>0.8622</td><td>0.7101</td><td>0.6236</td><td>0.7894</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>2</td><td>0.2741</td><td>0.1552</td><td>0.1333</td><td>0.1516</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>3</td><td>0.6772</td><td>0.8516</td><td>0.6543</td><td>0.7573</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>4</td><td>0.2178</td><td>0.5039</td><td>0.6415</td><td>0.5039</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>5</td><td>0.7260</td><td>0.7500</td><td>0.7007</td><td>0.4953</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>6</td><td>0.2473</td><td>0.2941</td><td>0.4248</td><td>0.3087</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>7</td><td>0.5682</td><td>0.5683</td><td>0.5054</td><td>0.4426</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>8</td><td>0.6566</td><td>0.6715</td><td>0.4952</td><td>0.3951</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>9</td><td>0.0705</td><td>0.4717</td><td>0.2921</td><td>0.2954</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>10</td><td>0.1187</td><td>0.2568</td><td>0.3140</td><td>0.3037</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>11</td><td>0.5673</td><td>0.7011</td><td>0.4083</td><td>0.5552</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>12</td><td>0.3164</td><td>0.2251</td><td>0.3526</td><td>0.2560</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>13</td><td>0.7884</td><td>0.9568</td><td>0.6825</td><td>0.6398</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>14</td><td>0.9633</td><td>0.7850</td><td>0.6777</td><td>0.6059</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>15</td><td>0.7739</td><td>0.8505</td><td>0.7934</td><td>0.6626</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>16</td><td>0.4219</td><td>0.4136</td><td>0.1408</td><td>0.0940</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>17</td><td>0.6616</td><td>0.4365</td><td>0.6597</td><td>0.8129</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>18</td><td>0.7325</td><td>0.4761</td><td>0.3888</td><td>0.5683</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+        </tbody>
+    </table>
+    <p><b>Taxa de Acerto:</b> 100.00%</p>
+
+</body>
+</html>
