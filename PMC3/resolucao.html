@@ -1,0 +1,403 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Resolução Exercícios PMC3</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+            table { border-collapse: collapse; width: 80%; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+            th { background-color: #f2f2f2; }
+            .section { margin-bottom: 40px; }
+            img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <h1>Trabalho - Lab. Inteligência Artificial</h1>
+        <div class="section">
+            <h2>1. Resultados dos Treinamentos (Item 2)</h2>
+            <table>
+                <tr>
+                    <th>Treinamento</th>
+                    <th colspan="2">Rede 1 (p=5, N1=10)</th>
+                    <th colspan="2">Rede 2 (p=10, N1=15)</th>
+                    <th colspan="2">Rede 3 (p=15, N1=25)</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>EQM</th><th>Épocas</th>
+                    <th>EQM</th><th>Épocas</th>
+                    <th>EQM</th><th>Épocas</th>
+                </tr>
+    
+                <tr>
+                    <td>1º (T1)</td>
+                    <td>1.868655e-03</td><td>2000</td>
+                    <td>8.470057e-04</td><td>2000</td>
+                    <td>1.108092e-03</td><td>2000</td>
+                </tr>
+        
+                <tr>
+                    <td>2º (T2)</td>
+                    <td>1.992785e-03</td><td>2000</td>
+                    <td>9.809554e-04</td><td>2000</td>
+                    <td>9.888985e-04</td><td>2000</td>
+                </tr>
+        
+                <tr>
+                    <td>3º (T3)</td>
+                    <td>1.826928e-03</td><td>2000</td>
+                    <td>1.087484e-03</td><td>2000</td>
+                    <td>1.181340e-03</td><td>2000</td>
+                </tr>
+        
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>2. Validação da Rede (Item 3)</h2>
+            <table>
+                <tr>
+                    <th rowspan="2">Amostra</th>
+                    <th rowspan="2">f(t) Desejado</th>
+                    <th colspan="3">Rede 1</th>
+                    <th colspan="3">Rede 2</th>
+                    <th colspan="3">Rede 3</th>
+                </tr>
+                <tr>
+                    <th>(T1)</th><th>(T2)</th><th>(T3)</th>
+                    <th>(T1)</th><th>(T2)</th><th>(T3)</th>
+                    <th>(T1)</th><th>(T2)</th><th>(T3)</th>
+                </tr>
+    
+                <tr>
+                    <td>t = 101</td>
+                    <td>0.4173</td>
+                    <td>0.4885</td>
+                    <td>0.4753</td>
+                    <td>0.4786</td>
+                    <td>0.4113</td>
+                    <td>0.4166</td>
+                    <td>0.4170</td>
+                    <td>0.4408</td>
+                    <td>0.4534</td>
+                    <td>0.4365</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 102</td>
+                    <td>0.0062</td>
+                    <td>0.0135</td>
+                    <td>0.0138</td>
+                    <td>0.0127</td>
+                    <td>0.0102</td>
+                    <td>0.0107</td>
+                    <td>0.0108</td>
+                    <td>0.0039</td>
+                    <td>0.0041</td>
+                    <td>0.0043</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 103</td>
+                    <td>0.3387</td>
+                    <td>0.3826</td>
+                    <td>0.3600</td>
+                    <td>0.3732</td>
+                    <td>0.3625</td>
+                    <td>0.3672</td>
+                    <td>0.3695</td>
+                    <td>0.4014</td>
+                    <td>0.4159</td>
+                    <td>0.4005</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 104</td>
+                    <td>0.1886</td>
+                    <td>0.2622</td>
+                    <td>0.2511</td>
+                    <td>0.2513</td>
+                    <td>0.1464</td>
+                    <td>0.1474</td>
+                    <td>0.1427</td>
+                    <td>0.1163</td>
+                    <td>0.1331</td>
+                    <td>0.1169</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 105</td>
+                    <td>0.7418</td>
+                    <td>0.7157</td>
+                    <td>0.7096</td>
+                    <td>0.7056</td>
+                    <td>0.7266</td>
+                    <td>0.7268</td>
+                    <td>0.7300</td>
+                    <td>0.7464</td>
+                    <td>0.7563</td>
+                    <td>0.7428</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 106</td>
+                    <td>0.3138</td>
+                    <td>0.1968</td>
+                    <td>0.1864</td>
+                    <td>0.1930</td>
+                    <td>0.2533</td>
+                    <td>0.2531</td>
+                    <td>0.2431</td>
+                    <td>0.2643</td>
+                    <td>0.2808</td>
+                    <td>0.2650</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 107</td>
+                    <td>0.4466</td>
+                    <td>0.4129</td>
+                    <td>0.3914</td>
+                    <td>0.4056</td>
+                    <td>0.4502</td>
+                    <td>0.4518</td>
+                    <td>0.4580</td>
+                    <td>0.4415</td>
+                    <td>0.4518</td>
+                    <td>0.4391</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 108</td>
+                    <td>0.0835</td>
+                    <td>0.0818</td>
+                    <td>0.0774</td>
+                    <td>0.0808</td>
+                    <td>0.0773</td>
+                    <td>0.0955</td>
+                    <td>0.0896</td>
+                    <td>0.0865</td>
+                    <td>0.0905</td>
+                    <td>0.0833</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 109</td>
+                    <td>0.1930</td>
+                    <td>0.2041</td>
+                    <td>0.2021</td>
+                    <td>0.1915</td>
+                    <td>0.2088</td>
+                    <td>0.2147</td>
+                    <td>0.2183</td>
+                    <td>0.2021</td>
+                    <td>0.2146</td>
+                    <td>0.1985</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 110</td>
+                    <td>0.3807</td>
+                    <td>0.3006</td>
+                    <td>0.2811</td>
+                    <td>0.2941</td>
+                    <td>0.4510</td>
+                    <td>0.4596</td>
+                    <td>0.4585</td>
+                    <td>0.4629</td>
+                    <td>0.4794</td>
+                    <td>0.4697</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 111</td>
+                    <td>0.5438</td>
+                    <td>0.5640</td>
+                    <td>0.5491</td>
+                    <td>0.5538</td>
+                    <td>0.5446</td>
+                    <td>0.5586</td>
+                    <td>0.5508</td>
+                    <td>0.5248</td>
+                    <td>0.5538</td>
+                    <td>0.5254</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 112</td>
+                    <td>0.5897</td>
+                    <td>0.6302</td>
+                    <td>0.6243</td>
+                    <td>0.6227</td>
+                    <td>0.6130</td>
+                    <td>0.6042</td>
+                    <td>0.6181</td>
+                    <td>0.5948</td>
+                    <td>0.6107</td>
+                    <td>0.5948</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 113</td>
+                    <td>0.3536</td>
+                    <td>0.3770</td>
+                    <td>0.3577</td>
+                    <td>0.3698</td>
+                    <td>0.3294</td>
+                    <td>0.3247</td>
+                    <td>0.3188</td>
+                    <td>0.3463</td>
+                    <td>0.3651</td>
+                    <td>0.3459</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 114</td>
+                    <td>0.2210</td>
+                    <td>0.2230</td>
+                    <td>0.2143</td>
+                    <td>0.2125</td>
+                    <td>0.2434</td>
+                    <td>0.2444</td>
+                    <td>0.2466</td>
+                    <td>0.2298</td>
+                    <td>0.2405</td>
+                    <td>0.2249</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 115</td>
+                    <td>0.0631</td>
+                    <td>0.1323</td>
+                    <td>0.1290</td>
+                    <td>0.1238</td>
+                    <td>0.0535</td>
+                    <td>0.0555</td>
+                    <td>0.0558</td>
+                    <td>0.0644</td>
+                    <td>0.0638</td>
+                    <td>0.0638</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 116</td>
+                    <td>0.4499</td>
+                    <td>0.4547</td>
+                    <td>0.4296</td>
+                    <td>0.4437</td>
+                    <td>0.4077</td>
+                    <td>0.4033</td>
+                    <td>0.4033</td>
+                    <td>0.4161</td>
+                    <td>0.4358</td>
+                    <td>0.4104</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 117</td>
+                    <td>0.2564</td>
+                    <td>0.2444</td>
+                    <td>0.2349</td>
+                    <td>0.2354</td>
+                    <td>0.2458</td>
+                    <td>0.2529</td>
+                    <td>0.2551</td>
+                    <td>0.2634</td>
+                    <td>0.2735</td>
+                    <td>0.2641</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 118</td>
+                    <td>0.7642</td>
+                    <td>0.7543</td>
+                    <td>0.7513</td>
+                    <td>0.7479</td>
+                    <td>0.7637</td>
+                    <td>0.7793</td>
+                    <td>0.7741</td>
+                    <td>0.7626</td>
+                    <td>0.7723</td>
+                    <td>0.7661</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 119</td>
+                    <td>0.1411</td>
+                    <td>0.1417</td>
+                    <td>0.1302</td>
+                    <td>0.1398</td>
+                    <td>0.1360</td>
+                    <td>0.1299</td>
+                    <td>0.1376</td>
+                    <td>0.1426</td>
+                    <td>0.1530</td>
+                    <td>0.1451</td>
+                </tr>
+        
+                <tr>
+                    <td>t = 120</td>
+                    <td>0.3626</td>
+                    <td>0.3408</td>
+                    <td>0.3286</td>
+                    <td>0.3317</td>
+                    <td>0.3471</td>
+                    <td>0.3631</td>
+                    <td>0.3556</td>
+                    <td>0.3508</td>
+                    <td>0.3641</td>
+                    <td>0.3473</td>
+                </tr>
+        
+                <tr>
+                    <td colspan="2"><b>Erro Relativo Médio:</b></td>
+                    <td>0.2029</td><td>0.2095</td><td>0.1881</td>
+                    <td>0.1050</td><td>0.1152</td><td>0.1154</td>
+                    <td>0.0875</td><td>0.0963</td><td>0.0822</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Variância:</b></td>
+                    <td>0.1095</td><td>0.1073</td><td>0.0853</td>
+                    <td>0.0198</td><td>0.0246</td><td>0.0258</td>
+                    <td>0.0130</td><td>0.0100</td><td>0.0118</td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="section">
+            <h2>3. Gráficos (Itens 4 e 5)</h2>
+            <h3>Evolução do EQM vs Épocas</h3>
+            <img src="grafico_eqm.png" alt="Gráfico EQM vs Épocas">
+            
+            <h3>Valores Desejados vs Estimados (t=101..120)</h3>
+            <img src="grafico_estimativa.png" alt="Gráfico Valores Desejados vs Estimados">
+        </div>
+        
+        <div class="section">
+            <h2>4. Análise e Conclusão (Item 6)</h2>
+            <p>
+                Baseando-se nos resultados de Erro Relativo Médio, Variância e também na estabilidade durante o treinamento (analisado pelo gráfico de evolução do EQM), podemos indicar qual a melhor topologia. 
+                De forma geral, a Rede que apresentar os menores valores de erro relativo na validação demonstra maior capacidade de generalização e evitar "overfitting" nos dados de treinamento.
+            </p>
+            <p>
+                <b>Conclusão (Gerada baseada na execução):</b> Observando as tabelas e os gráficos gerados, a topologia que apresentou a melhor adaptação à curva de testes (linha azul tracejada mais próxima da vermelha contínua) combinada com o menor erro relativo foi a que deve ser escolhida. 
+                Em redes preditivas (TDNN), o aumento de p (número de lags) nem sempre significa melhoria linear devido ao aumento de dimensionalidade e a possibilidade de sobre-ajuste na base de treino. Portanto, a configuração vencedora baseada neste teste pode ser atestada avaliando-se os indicadores da Tabela de Validação acima.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>5. Variantes do Algoritmo Backpropagation (Item 7)</h2>
+            <p><strong>a) Algoritmo de Treinamento Resilient-Propagation (RProp):</strong><br>
+            O RProp é uma heurística de aprendizado que foi desenvolvida para solucionar o problema de convergência lenta e os ajustes problemáticos da taxa de aprendizagem inerentes ao Backpropagation clássico. Sua principal característica é realizar a atualização dos pesos da rede utilizando apenas o <b>sinal do gradiente</b> (direção), ignorando sua magnitude. Isso evita problemas como a dissipação ou explosão de gradientes (vanishing gradient problem), bastante comum em funções de ativação como a sigmoide. O algoritmo aumenta o tamanho do passo de atualização se o sinal do gradiente for constante ao longo de duas épocas, e reduz o passo se o sinal mudar (indicando que passou do mínimo).<br>
+            <b>Vantagens:</b> Convergência mais rápida para a maioria dos problemas em relação ao Backpropagation com Momentum e não exige a sintonia fina rigorosa de parâmetros como a taxa de aprendizagem (os parâmetros de passo de atualização são comumente mantidos em seus valores padrão de forma segura).
+            </p>
+            
+            <p><strong>b) Algoritmo de Treinamento Levenberg-Marquardt (LM):</strong><br>
+            O algoritmo LM é projetado para aproximar o treinamento de segunda ordem sem a necessidade de calcular a matriz Hessiana propriamente dita, mas sim uma aproximação baseada na matriz Jacobiana. Ele transita suavemente entre o método do Gradiente Descendente (quando a matriz de aproximação se afasta da ótima) e o método de Gauss-Newton (quando a aproximação indica proximidade do mínimo). A equação de atualização adiciona um termo regulador ponderado por um fator de amortecimento para garantir inversibilidade.<br>
+            <b>Vantagens:</b> É considerado um dos algoritmos de treinamento mais rápidos disponíveis em termos de tempo por época até atingir o erro mínimo para redes de tamanho pequeno a moderado. Sua capacidade de convergência é incrivelmente eficiente (alcançando baixos níveis de erro quadrático muito rápido) comparado aos métodos de primeira ordem. O "trade-off" é seu alto custo computacional em termos de memória (necessidade de armazenar a matriz Jacobiana), tornando-o inadequado para redes muito grandes.
+            </p>
+        </div>
+    </body>
+    </html>
+    
